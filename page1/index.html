@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Weather Forcast</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<!-- Font Awesome 5 CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="weather_boxes_style.css" >
 
+</head>
+<body>
+<div class="container">
+    <p>Today's date is: <span id="current-date"></span></p>
+    <table>
+	       <tr>
+		       <td>
+			       <div class="physical_quantities">
+				         <!-- Sun Icon -->
+						 <i class="fas fa-sun"></i>
+						 <p>Temperature: 28°C</p>
+				   </div>
+			   </td>
+			   <td>
+			       <div class="physical_quantities">
+				   <!-- tint : A solid water droplet -->
+				   <i class="fas fa-tint"></i>
+				   <p>Humidity: 65%</p>
+				   </div>
+			   </td>
+		   </tr>
+		   <tr>
+		       <td>
+			       <div class="physical_quantities">
+				   <i class="fas fa-wind"></i>
+				   <p>Wind: 9 km/h NorthWest</p>
+				   </div>
+			   </td>
+			   <td>
+			       <div class="physical_quantities">
+				   <i class="fas fa-smog"></i>
+				   <p>AQI: 176 </p>
+				   </div>
+			   </td>
+		   </tr>
+	</table>
+</div>
+<script>
+    // Logic to show today's date
+    document.getElementById('current-date').textContent = new Date().toLocaleDateString();
+</script>
+</body>
+</html>
